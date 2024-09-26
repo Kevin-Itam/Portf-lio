@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/FavIcon-64px.png">
+    <script src="https://kit.fontawesome.com/3a1453d3f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./visual/css/style.css">
+    <link rel="stylesheet" href="./visual/css/responsive.css">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <!-- video background -->
+    <video autoplay loop muted playsinline>
+        <source src="./img/pattern_-_85590 (Original).mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <!-- PERFIL FIXED-->
+    <div class="fixo">
+        <div class="perfil">
+            <header>
+                <div>Kevin I. A. <br>Gazaniga</div>
+                <div>Desenvolvedor <br>web</div>
+            </header>
+            <img class="perfil_img" src="./img/coming-soon-HD.jpg" alt="SELF">
+            <div class="box">
+                <p>kevinitamar@gmail.com</p>
+                <p align="center">Joinville/SC, BR</p>
+            </div>
+            <nav>
+                <ul class="link_tree">
+                    <li class="icon"><a href="https://github.com/Kevin-Itam" target="_blank"><i class="fa-brands fa-github gith"></i></a></li>
+                    <li class="icon"><a href="https://www.linkedin.com/in/kevin-itamar/" target="_blank"><i class="fa-brands fa-linkedin linked"></i></a></li>
+                    <li class="icon"><a href="https://api.whatsapp.com/send?phone=5547984214689&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA!
+                        " target="_blank"><i class="fa-brands fa-whatsapp whats"></i></a></li>
+                </ul>
+            </nav>
+            <footer align="center"><a href="./pdf/Currículo.pdf" download="Curriculo"><button><i
+                            class="fa-regular fa-folder-open"></i>Curriculo</button></a>
+            </footer>
+        </div>
+    </div>
+    <!-- ICON MENU -->
+    <span class="icon_menu" onclick="toggleElement('toggle')">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+    <!-- NAV-BAR -->
+    <div id="toggle">
+        <div class="sidebar_responsive">
+            <div class="overlay"></div>
+            <div class="sidebar">
+                <div class="side_menu">
+                    <p>Menu</p>
+                    <ul class="menu">
+                        <li><a class="scroll-to" onclick="scrollElement('home')"><i
+                                    class="fa-solid fa-house"></i><span>Home</span></a></li>
+                        <li><a class="scroll-to" onclick="scrollElement('about')"><i
+                                    class="fa-solid fa-user"></i><span>Sobre</span></a></li>
+                        <li><a class="scroll-to" onclick="scrollElement('formation')"><i
+                                    class="fa-solid fa-user-graduate"></i><span>Graduação</span></a>
+                        </li>
+                        <li><a class="scroll-to" onclick="scrollElement('skill')"><i
+                                    class="fa-solid fa-shapes"></i><span>Skills</span></a></li>
+                        <li><a class="scroll-to" onclick="scrollElement('port')"><i
+                                    class="fa-solid fa-grip-vertical"></i><span>Portfólios</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side_social">
+                    <p>Contatos</p>
+                    <ul class="menu_social">
+                        <li><a href="https://github.com/Kevin-Itam" target="_blank"><i class="fa-brands fa-github gith"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kevin-itamar/" target="_blank"><i class="fa-brands fa-linkedin linked"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5547984214689&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA!
+                            " target="_blank"><i class="fa-brands fa-whatsapp whats"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu scroll -->
+    <ul class="menu_scroll ">
+        <li class="scroll-to "><a class="nav__link" data-section="home"
+                onclick="scrollElement('home')"><span>Home</span><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="scroll-to "><a class="nav__link" data-section="about"
+                onclick="scrollElement('about')"><span>Sobre</span><i class="fa-solid fa-user"></i></a></li>
+        <li class="scroll-to "><a class="nav__link" data-section="formation"
+                onclick="scrollElement('formation')"><span>Graduação</span><i class="fa-solid fa-user-graduate"></i></a>
+        </li>
+        <li class="scroll-to "><a class="nav__link" data-section="skill"
+                onclick="scrollElement('skill')"><span>Skills</span><i class="fa-solid fa-shapes"></i></a></li>
+        <li class="scroll-to "><a class="nav__link" data-section="port"
+                onclick="scrollElement('port')"><span>Portfolios</span><i class="fa-solid fa-grip-vertical"></i></a>
+        </li>
+    </ul>
+
+    <!-- CONTEUDO CENTRAL DA PAGINA -->
+
+    <!-- SECTION 1 -->
+    <section class="movel" id="home">
+        <div class="box_container">
+            <div class="container">
+                <div class="container_content">
+                    <div class="section_header">
+                        <h4><i class="fa-solid fa-house"></i> Introdução </h4>
+                        <h1>Olá! Sou o <span style="color:#a5881d;">Kevin Itamar</span>, Desenvolvedor Full Stack e
+                            Web Desiger</h1>
+                    </div>
+                    <p>Este é o meu espaço criativo, onde compartilho meu processo, projetos e conquistas. Sinta-se
+                        à vontade para explorar e conhecer meu trabalho.
+                    </p>
+                    <a onclick="scrollElement('port')" class="way_profile">
+                        <i class="fa-solid fa-arrow-down arrow"></i>
+                        <img class="port_link" src="./img/link_projetos.png" alt="link">
+                    </a>
+                    <div class="formation">
+                        <div class="formation_1">UI <br>DESIGNER</div>
+                        <div class="formation_2">UX <br>DESIGNER</div>
+                        <div class="formation_3">WEB <br>DEVELOPER</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="about">
+        <div class="box_container">
+            <div class="container">
+                <div class="container_content">
+                    <div class="about_section">
+                        <div class="section_header">
+                            <h4><i class="fa-solid fa-user" style="color: black;"></i>Sobre Mim </h4>
+                            <h2>Um pouco sobre mim</h1>
+                        </div>
+                        <div class="div_p">
+                            <p>Olá! Me chamo Kevin Itamar. Iniciei meus estudos como desenvolvedor web há dois anos.
+                                Em
+                                2023, concluí meu curso Técnico de Desenvolvimento de Sistemas e, no ano seguinte,
+                                em
+                                2024, dei início a uma graduação na mesma área. Durante esse período, adquiri
+                                conhecimento amplo como full stack, com foco especializado em front-end. </p>
+                        </div>
+                        <div class="resume_info">
+                            <div class="info">
+                                <p>Nome</p>
+                                <h1>:</h1>
+                                <span>Kevin Itamar Amorim Gazaniga</span>
+                            </div>
+                            <div class="info">
+                                <p>Nacionalidade</p>
+                                <h1>:</h1>
+                                <span>Brasileiro</span>
+                            </div>
+                            <div class="info">
+                                <p>Whatsapp</p>
+                                <h1>:</h1>
+                                <span>47 9 84214689</span>
+                            </div>
+                            <div class="info">
+                                <p>Email</p>
+                                <h1>:</h1>
+                                <span>kevinitamar16@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+
+    <section id="formation">
+        <div class="box_container">
+            <div class="container">
+                <div class="container_content">
+                    <div class="section_header">
+                        <h4><i class="fa-solid fa-user-graduate" style="color: black;"></i> Formações </h4>
+                        <h2>Formações e <span style="color:#a5881d;">experiencias</span></h2>
+                    </div>
+                    <div class="list_format">
+                        <div class="list">
+                            <span class="date">Inicio - 2024 / Em Andamento</span>
+                            <h2>Análise &amp; Desenvolvimento de Sistemas</h2>
+                            <h3>Tecnólogo - 5 semestres</h3>
+                            <p>Uniasselvi</p>
+
+                        </div>
+                    </div>
+                    <div class="list_format">
+                        <div class="list">
+                            <span class="date">Inicio - 2021 / termino - 2023</span>
+                            <h2>Análise &amp; Desenvolvimento de Sistemas</h2>
+                            <h3>Técnico - 5 semestres </h3>
+                            <p>Senai/SC</p>
+
+                        </div>
+                    </div>
+                    <div class="list_format">
+                        <div class="list">
+                            <span class="date">Outras Formações e Cursos</span>
+                            <ul>
+                                <li>Operador de Empilhadeira<span>Término - 2021</span></li>
+                                <li>Inglês – Intermediário<span>Término - 2019</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 -->
+
+    <section id="skill">
+        <div class="box_container">
+            <div class="container">
+                <div class="container_content">
+                    <div class="section_header">
+                        <h4><i class="fa-solid fa-shapes" style="color: black;"></i> Habilidades </h4>
+                        <h2>Minhas <span style="color:#a5881d;">Habilidades</span></h2>
+                    </div>
+                    <div class="type_skills">
+                        <div class="container_skill">
+                            <div class="skills">
+                                <img src="./img/html_100px_color.png" alt="HTML">
+                                <h1>HTML</h1>
+                            </div>
+                        </div>
+                        <div class="container_skill">
+                            <div class="skills">
+                                <img src="./img/css_100px_color.png" alt="HTML">
+                                <h1>CSS</h1>
+                            </div>
+                        </div>
+                        <div class="container_skill">
+                            <div class="skills">
+                                <img src="./img/php_100px_color.png" alt="HTML">
+                                <h1>PHP</h1>
+                            </div>
+                        </div>
+                        <div class="container_skill">
+                            <div class="skills">
+                                <img src="./img/javascript_100px_color.png" alt="HTML">
+                                <h1>JAVASCRIPT</h1>
+                            </div>
+                        </div>
+                        <div class="container_skill">
+                            <div class="skills">
+                                <img src="./img/sass_100px_color.png" alt="HTML">
+                                <h1>SCSS</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 -->
+
+    <section id="port">
+        <div class="box_container">
+            <div class="container">
+                <div class="container_content">
+                    <div class="section_header">
+                        <h4><i class="fa-solid fa-grip-vertical" style="color: black;"></i>Portfólio </h4>
+                        <h2>Meus&nbsp;<span style="color:#a5881d;">projetos</span></h1>
+                    </div>
+                    <div class="port_preview">
+                        <div class="box1 box_preview">
+                            <a href="#" class="preview" target="_blank">
+                                <img src="./img/EDIT-Capturar-SITE.jpg" alt="preview" loading="lazy">
+                                <ul class="pot1 port_categories">
+                                    <li>CSS</li>
+                                    <li>HTML</li>
+                                    <li>JAVASCRIPT</li>
+                                    <li>SASS</li>
+                                </ul>
+                            </a>
+                            <div href="#" class="t1 tittle_preview">Portfolio Profissional</div>
+                        </div>
+                        <div class="pr1">
+                            <a href="#" class="box2 box_preview" target="_blank">
+                                <div class="preview">
+                                    <img src="./img/coming-soon-HD.jpg" alt="preview" loading="lazy">
+                                    <ul class="pot2 port_categories">
+                                        <li>SOON</li>
+                                        <li>SOON</li>
+                                        <li>SOON</li>
+                                    </ul>
+                                </div>
+                                <div href="#" class="t2 tittle_preview">Projeto em desenvolvimento</div>
+                            </a>
+                            <a href="#" class="box3 box_preview" target="_blank">
+                                <div class="preview">
+                                    <img src="./img/coming-soon-HD.jpg" alt="preview" loading="lazy">
+                                    <ul class="pot3 port_categories">
+                                        <li>SOON</li>
+                                        <li>SOON</li>
+                                        <li>SOON</li>
+                                    </ul>
+                                </div>
+                                <div href="#" class="t3 tittle_preview">Projeto em desenvolvimento</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./scripts/scroll.js"></script>
+<script src="./scripts/navbar.js"></script>
+
+</html>
