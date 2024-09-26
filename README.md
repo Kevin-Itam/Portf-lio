@@ -1,4 +1,4 @@
-# Olá !!! Me chamo Kevin Itamar e esse é meu Portfoliosssss
+# Olá !!! Me chamo Kevin Itamar e esse é meu Portfolio
 
 Este é o repositório do meu portfólio, onde compartilho alguns dos meus trabalhos e projetos mais recentes.Você encontrará variedadeS de projetos,e trabalhos de design e desenvolvimento de software.
 
